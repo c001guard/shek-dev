@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Valerii Shek — DevOps Engineer. Self-hosted portfolio with Docker, CI/CD, monitoring.">
+  <title>Valerii Shek — DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo"><span class="lo">[</span>shek<span class="ld">.</span>dev<span class="lo">]</span></a>
+      <nav class="nav" id="nav">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#stack" data-i18n="nav.stack">Stack</a>
+        <a href="#exp" data-i18n="nav.exp">Experience</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#arch" data-i18n="nav.arch">Architecture</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="lang" id="langSwitcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" data-lang="ru">RU</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <div class="badge-avail"><span class="badge-dot"></span><span data-i18n="hero.avail">Available from July 2026</span></div>
+        <p class="hero-cmd">$ whoami</p>
+        <h1 class="hero-name">Valerii<br>Shek</h1>
+        <p class="hero-role"><span class="hero-caret">›</span> <span data-i18n="hero.role">DevOps engineer / sysadmin</span></p>
+        <p class="hero-desc" data-i18n="hero.desc">Building reliable infrastructure with Linux, Docker, and CI/CD. Studying at School 21 (Sber). Maintaining IT across three institutions in Tashkent.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-prim" data-i18n="hero.cta1">Get in touch</a>
+          <a href="resume.pdf" class="btn-sec" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span data-i18n="hero.cta2">Download CV</span></a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <svg viewBox="0 0 360 360" class="hero-svg" role="img" aria-label="Infrastructure node graph">
+          <defs>
+            <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#88C0D0" stop-opacity="0.08"/><stop offset="100%" stop-color="#88C0D0" stop-opacity="0"/></radialGradient>
+          </defs>
+          <circle cx="180" cy="180" r="160" fill="url(#glow)"/>
+          <g stroke="#434C5E" stroke-width="1" fill="none" opacity="0.6">
+            <line x1="180" y1="180" x2="180" y2="55"/><line x1="180" y1="180" x2="290" y2="115"/>
+            <line x1="180" y1="180" x2="290" y2="245"/><line x1="180" y1="180" x2="180" y2="305"/>
+            <line x1="180" y1="180" x2="70" y2="245"/><line x1="180" y1="180" x2="70" y2="115"/>
+          </g>
+          <circle cx="180" cy="180" r="42" fill="#2E3440" stroke="#88C0D0" stroke-width="2"/>
+          <text x="180" y="176" text-anchor="middle" fill="#88C0D0" font-family="JetBrains Mono" font-size="12" font-weight="500">CORE</text>
+          <text x="180" y="192" text-anchor="middle" fill="#8FBCBB" font-family="JetBrains Mono" font-size="10">Linux</text>
+          <g class="nd"><rect x="152" y="30" width="56" height="48" rx="6" fill="#2E3440" stroke="#81A1C1" stroke-width="1.5"/><text x="180" y="56" text-anchor="middle" fill="#81A1C1" font-family="JetBrains Mono" font-size="10" font-weight="500">Docker</text><text x="180" y="70" text-anchor="middle" fill="#D8DEE9" font-family="JetBrains Mono" font-size="8">containers</text></g>
+          <g class="nd"><rect x="260" y="90" width="62" height="48" rx="6" fill="#2E3440" stroke="#A3BE8C" stroke-width="1.5"/><text x="291" y="116" text-anchor="middle" fill="#A3BE8C" font-family="JetBrains Mono" font-size="10" font-weight="500">Nginx</text><text x="291" y="130" text-anchor="middle" fill="#D8DEE9" font-family="JetBrains Mono" font-size="8">proxy+TLS</text></g>
+          <g class="nd"><rect x="260" y="222" width="62" height="48" rx="6" fill="#2E3440" stroke="#B48EAD" stroke-width="1.5"/><text x="291" y="248" text-anchor="middle" fill="#B48EAD" font-family="JetBrains Mono" font-size="10" font-weight="500">CI/CD</text><text x="291" y="262" text-anchor="middle" fill="#D8DEE9" font-family="JetBrains Mono" font-size="8">Actions</text></g>
+          <g class="nd"><rect x="152" y="282" width="56" height="48" rx="6" fill="#2E3440" stroke="#EBCB8B" stroke-width="1.5"/><text x="180" y="308" text-anchor="middle" fill="#EBCB8B" font-family="JetBrains Mono" font-size="10" font-weight="500">Monitor</text><text x="180" y="322" text-anchor="middle" fill="#D8DEE9" font-family="JetBrains Mono" font-size="8">Prom+Graf</text></g>
+          <g class="nd"><rect x="38" y="222" width="62" height="48" rx="6" fill="#2E3440" stroke="#5E81AC" stroke-width="1.5"/><text x="69" y="248" text-anchor="middle" fill="#8FBCBB" font-family="JetBrains Mono" font-size="10" font-weight="500">PG 16</text><text x="69" y="262" text-anchor="middle" fill="#D8DEE9" font-family="JetBrains Mono" font-size="8">database</text></g>
+          <g class="nd"><rect x="38" y="90" width="62" height="48" rx="6" fill="#2E3440" stroke="#D08770" stroke-width="1.5"/><text x="69" y="116" text-anchor="middle" fill="#D08770" font-family="JetBrains Mono" font-size="10" font-weight="500">Python</text><text x="69" y="130" text-anchor="middle" fill="#D8DEE9" font-family="JetBrains Mono" font-size="8">bot+scripts</text></g>
+          <circle r="3" fill="#88C0D0" opacity="0.8"><animateMotion dur="3s" repeatCount="indefinite" path="M 180 55 L 180 180"/></circle>
+          <circle r="3" fill="#A3BE8C" opacity="0.8"><animateMotion dur="3.5s" repeatCount="indefinite" path="M 290 115 L 180 180"/></circle>
+          <circle r="3" fill="#EBCB8B" opacity="0.8"><animateMotion dur="4s" repeatCount="indefinite" path="M 180 305 L 180 180"/></circle>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="about">
+    <div class="container">
+      <div class="sec-head"><span class="sec-n">01</span><h2 data-i18n="about.title">About</h2></div>
+      <div class="about-grid">
+        <div class="about-txt">
+          <p data-i18n="about.p1">Currently studying at <strong>School 21 (Sber)</strong> on the SysAdmin / DevOps track. Hands-on experience with Linux, Docker, GitLab CI/CD, monitoring (Prometheus + Grafana), Nginx, bash scripting and networking.</p>
+          <p data-i18n="about.p2">In parallel — administering IT infrastructure in <strong>three educational institutions</strong> in Tashkent: OS installs, networks, user support, incident resolution.</p>
+          <p data-i18n="about.p3">Previously worked as <strong>SEO specialist</strong>, administering WordPress sites: installations, plugins, security, HTML/CSS edits.</p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card"><div class="stat-n">3+</div><div class="stat-l" data-i18n="about.s1">years of work experience</div></div>
+          <div class="stat-card"><div class="stat-n">10+</div><div class="stat-l" data-i18n="about.s2">PCs administered</div></div>
+          <div class="stat-card"><div class="stat-n">20+</div><div class="stat-l" data-i18n="about.s3">volunteers I lead</div></div>
+          <div class="stat-card"><div class="stat-n">3</div><div class="stat-l" data-i18n="about.s4">parallel positions</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt" id="stack">
+    <div class="container">
+      <div class="sec-head"><span class="sec-n">02</span><h2 data-i18n="stack.title">Tech stack</h2></div>
+      <p class="sec-sub" data-i18n="stack.sub">Self-assessed proficiency, Grafana-style.</p>
+      <div class="stack-grid" id="stackGrid">
+        <div class="stack-col">
+          <h3 class="stack-cat cat-frost" data-i18n="stack.c1">DevOps &amp; infrastructure</h3>
+          <div class="bar" data-level="85"><span class="bar-nm">Linux</span><div class="bar-track"><div class="bar-fill bf-frost"></div></div><span class="bar-v">85</span></div>
+          <div class="bar" data-level="75"><span class="bar-nm">Docker</span><div class="bar-track"><div class="bar-fill bf-frost"></div></div><span class="bar-v">75</span></div>
+          <div class="bar" data-level="70"><span class="bar-nm">Nginx</span><div class="bar-track"><div class="bar-fill bf-frost"></div></div><span class="bar-v">70</span></div>
+          <div class="bar" data-level="65"><span class="bar-nm">GitLab CI</span><div class="bar-track"><div class="bar-fill bf-frost"></div></div><span class="bar-v">65</span></div>
+          <div class="bar" data-level="60"><span class="bar-nm">Prom+Grafana</span><div class="bar-track"><div class="bar-fill bf-frost"></div></div><span class="bar-v">60</span></div>
+        </div>
+        <div class="stack-col">
+          <h3 class="stack-cat cat-green" data-i18n="stack.c2">Programming</h3>
+          <div class="bar" data-level="80"><span class="bar-nm">Python</span><div class="bar-track"><div class="bar-fill bf-green"></div></div><span class="bar-v">80</span></div>
+          <div class="bar" data-level="70"><span class="bar-nm">Bash</span><div class="bar-track"><div class="bar-fill bf-green"></div></div><span class="bar-v">70</span></div>
+          <div class="bar" data-level="50"><span class="bar-nm">PowerShell</span><div class="bar-track"><div class="bar-fill bf-green"></div></div><span class="bar-v">50</span></div>
+          <div class="bar" data-level="40"><span class="bar-nm">SQL</span><div class="bar-track"><div class="bar-fill bf-green"></div></div><span class="bar-v">40</span></div>
+        </div>
+        <div class="stack-col">
+          <h3 class="stack-cat cat-orange" data-i18n="stack.c3">Networking &amp; sysadmin</h3>
+          <div class="bar" data-level="80"><span class="bar-nm">Windows</span><div class="bar-track"><div class="bar-fill bf-orange"></div></div><span class="bar-v">80</span></div>
+          <div class="bar" data-level="70"><span class="bar-nm">TCP/IP</span><div class="bar-track"><div class="bar-fill bf-orange"></div></div><span class="bar-v">70</span></div>
+          <div class="bar" data-level="65"><span class="bar-nm">LAN/Wi-Fi</span><div class="bar-track"><div class="bar-fill bf-orange"></div></div><span class="bar-v">65</span></div>
+          <div class="bar" data-level="60"><span class="bar-nm">PC repair</span><div class="bar-track"><div class="bar-fill bf-orange"></div></div><span class="bar-v">60</span></div>
+        </div>
+        <div class="stack-col">
+          <h3 class="stack-cat cat-purple" data-i18n="stack.c4">Other</h3>
+          <div class="bar" data-level="75"><span class="bar-nm">WordPress</span><div class="bar-track"><div class="bar-fill bf-purple"></div></div><span class="bar-v">75</span></div>
+          <div class="bar" data-level="60"><span class="bar-nm">Git</span><div class="bar-track"><div class="bar-fill bf-purple"></div></div><span class="bar-v">60</span></div>
+          <div class="bar" data-level="55"><span class="bar-nm">English B1</span><div class="bar-track"><div class="bar-fill bf-purple"></div></div><span class="bar-v">55</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="exp">
+    <div class="container">
+      <div class="sec-head"><span class="sec-n">03</span><h2 data-i18n="exp.title">Experience</h2></div>
+      <div class="tl">
+        <div class="tl-item"><div class="tl-dot tl-active"></div><div class="tl-body"><div class="tl-meta"><span class="tl-date">2025 — now</span><span class="tl-tag tag-frost" data-i18n="exp.tc">Current</span></div><h3 data-i18n="exp.r1">School 21 (Sber) — DevOps trainee</h3><p data-i18n="exp.d1">Hands-on labs: Linux networking (5-VM topology), Docker, GitLab CI/CD, Prometheus + Grafana, Nginx.</p></div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-body"><div class="tl-meta"><span class="tl-date">2026 — now</span><span class="tl-tag tag-green" data-i18n="exp.ta">Active</span></div><h3 data-i18n="exp.r2">IT teacher &amp; SysAdmin — 3 institutions</h3><p data-i18n="exp.d2">Pifagor, IT STEP, Faraday. Teaching Python, IT, robotics. Maintaining 10–20 PCs, networks, peripherals.</p></div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-body"><div class="tl-meta"><span class="tl-date">Jul — Sep 2025</span><span class="tl-tag tag-purple" data-i18n="exp.tp">Past</span></div><h3 data-i18n="exp.r3">SEO specialist — Seotime.uz</h3><p data-i18n="exp.d3">WordPress administration: installs, plugins (Yoast, RankMath), security, HTML/CSS, SEO audits.</p></div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-body"><div class="tl-meta"><span class="tl-date">2022 — 2025</span><span class="tl-tag tag-gray" data-i18n="exp.tx">Archive</span></div><h3 data-i18n="exp.r4">Earlier — Office, design, retail</h3><p data-i18n="exp.d4">Equipment maintenance, graphic design (Photoshop), customer-facing roles.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt" id="projects">
+    <div class="container">
+      <div class="sec-head"><span class="sec-n">04</span><h2 data-i18n="proj.title">Projects</h2></div>
+      <div class="proj-grid">
+        <a href="https://github.com/c001guard/shek-dev" target="_blank" rel="noopener" class="proj feat"><div class="proj-top"><span class="proj-ico">⚙</span><span class="proj-st st-prog" data-i18n="proj.sp">In progress</span></div><h3>shek-dev</h3><p data-i18n="proj.pd1">This site: VPS + Docker + Nginx + Let's Encrypt + GitHub Actions + Prometheus.</p><div class="proj-tags"><span>Docker</span><span>Nginx</span><span>CI/CD</span><span>Prometheus</span></div></a>
+        <a href="https://github.com/c001guard/volunteer_bot" target="_blank" rel="noopener" class="proj"><div class="proj-top"><span class="proj-ico">⚡</span><span class="proj-st st-reb" data-i18n="proj.sr">v2 planned</span></div><h3>volunteer-bot</h3><p data-i18n="proj.pd2">Telegram bot for 20+ volunteers. aiogram + PostgreSQL + Google Sheets. v2 with UX rework.</p><div class="proj-tags"><span>Python</span><span>aiogram</span><span>PostgreSQL</span></div></a>
+        <a href="https://github.com/c001guard/Linux-Networking-Lab" target="_blank" rel="noopener" class="proj"><div class="proj-top"><span class="proj-ico">◇</span><span class="proj-st st-done" data-i18n="proj.sd">Done</span></div><h3>linux-networking-lab</h3><p data-i18n="proj.pd3">5-VM network topology: routing, subnetting, connectivity.</p><div class="proj-tags"><span>Linux</span><span>Networking</span></div></a>
+        <a href="https://github.com/c001guard/Dockerized-Web-Server-Infrastructure-Lab" target="_blank" rel="noopener" class="proj"><div class="proj-top"><span class="proj-ico">▣</span><span class="proj-st st-done" data-i18n="proj.sd">Done</span></div><h3>dockerized-web-server</h3><p data-i18n="proj.pd4">Containerization: Dockerfile + multi-container docker-compose.</p><div class="proj-tags"><span>Docker</span><span>Nginx</span></div></a>
+        <a href="https://github.com/c001guard/Linux-Automation-Logging-and-Monitoring-Lab" target="_blank" rel="noopener" class="proj"><div class="proj-top"><span class="proj-ico">▤</span><span class="proj-st st-done" data-i18n="proj.sd">Done</span></div><h3>monitoring-lab</h3><p data-i18n="proj.pd5">Real-time system monitoring, log aggregation, metrics.</p><div class="proj-tags"><span>Bash</span><span>Linux</span></div></a>
+        <a href="https://github.com/c001guard/Bash-System-Filesystem-Research" target="_blank" rel="noopener" class="proj"><div class="proj-top"><span class="proj-ico">›_</span><span class="proj-st st-done" data-i18n="proj.sd">Done</span></div><h3>bash-filesystem</h3><p data-i18n="proj.pd6">Linux filesystem deep-dive, bash scripting, syscall research.</p><div class="proj-tags"><span>Bash</span><span>Linux</span></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="arch">
+    <div class="container">
+      <div class="sec-head"><span class="sec-n">05</span><h2 data-i18n="arch.title">How this site is built</h2></div>
+      <p class="sec-sub" data-i18n="arch.sub">A real DevOps showcase — full infrastructure breakdown.</p>
+      <div class="arch-box">
+        <svg viewBox="0 0 800 440" class="arch-svg" role="img" aria-label="Architecture diagram">
+          <defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0L0 0 0 40" fill="none" stroke="#3B4252" stroke-width="0.5"/></pattern><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="2.5" orient="auto"><path d="M0,0L0,5L7,2.5z" fill="#4C566A"/></marker></defs>
+          <rect width="800" height="440" fill="url(#g)" opacity="0.2"/>
+          <circle cx="80" cy="80" r="28" fill="#2E3440" stroke="#88C0D0" stroke-width="1.5"/>
+          <text x="80" y="77" text-anchor="middle" fill="#88C0D0" font-family="JetBrains Mono" font-size="10">USER</text>
+          <text x="80" y="90" text-anchor="middle" fill="#D8DEE9" font-family="JetBrains Mono" font-size="8">browser</text>
+          <rect x="200" y="55" width="115" height="48" rx="6" fill="#2E3440" stroke="#81A1C1" stroke-width="1.5"/>
+          <text x="257" y="77" text-anchor="middle" fill="#81A1C1" font-family="JetBrains Mono" font-size="10">Cloudflare</text>
+          <text x="257" y="92" text-anchor="middle" fill="#D8DEE9" font-family="JetBrains Mono" font-size="9">shek.dev</text>
+          <rect x="380" y="30" width="380" height="370" rx="10" fill="none" stroke="#4C566A" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <text x="570" y="52" text-anchor="middle" fill="#4C566A" font-family="JetBrains Mono" font-size="10">VPS — Ubuntu 22.04</text>
+          <rect x="420" y="68" width="130" height="44" rx="5" fill="#2E3440" stroke="#A3BE8C" stroke-width="1.5"/>
+          <text x="485" y="89" text-anchor="middle" fill="#A3BE8C" font-family="JetBrains Mono" font-size="10">Nginx + TLS</text>
+          <text x="485" y="103" text-anchor="middle" fill="#D8DEE9" font-family="JetBrains Mono" font-size="8">Let's Encrypt</text>
+          <rect x="420" y="140" width="310" height="160" rx="6" fill="none" stroke="#434C5E" stroke-width="1" stroke-dasharray="2 2"/>
+          <text x="575" y="158" text-anchor="middle" fill="#434C5E" font-family="JetBrains Mono" font-size="9">docker network</text>
+          <rect x="435" y="172" width="100" height="44" rx="5" fill="#2E3440" stroke="#88C0D0" stroke-width="1.5"/>
+          <text x="485" y="193" text-anchor="middle" fill="#88C0D0" font-family="JetBrains Mono" font-size="9">site</text>
+          <text x="485" y="206" text-anchor="middle" fill="#D8DEE9" font-family="JetBrains Mono" font-size="8">nginx:alpine</text>
+          <rect x="435" y="236" width="100" height="44" rx="5" fill="#2E3440" stroke="#D08770" stroke-width="1.5"/>
+          <text x="485" y="257" text-anchor="middle" fill="#D08770" font-family="JetBrains Mono" font-size="9">bot</text>
+          <text x="485" y="270" text-anchor="middle" fill="#D8DEE9" font-family="JetBrains Mono" font-size="8">aiogram</text>
+          <rect x="560" y="172" width="100" height="44" rx="5" fill="#2E3440" stroke="#5E81AC" stroke-width="1.5"/>
+          <text x="610" y="193" text-anchor="middle" fill="#8FBCBB" font-family="JetBrains Mono" font-size="9">postgres</text>
+          <text x="610" y="206" text-anchor="middle" fill="#D8DEE9" font-family="JetBrains Mono" font-size="8">v16</text>
+          <rect x="560" y="236" width="100" height="44" rx="5" fill="#2E3440" stroke="#EBCB8B" stroke-width="1.5"/>
+          <text x="610" y="257" text-anchor="middle" fill="#EBCB8B" font-family="JetBrains Mono" font-size="9">monitor</text>
+          <text x="610" y="270" text-anchor="middle" fill="#D8DEE9" font-family="JetBrains Mono" font-size="8">prom+grafana</text>
+          <rect x="420" y="340" width="310" height="36" rx="5" fill="#2E3440" stroke="#BF616A" stroke-width="1.5"/>
+          <text x="575" y="362" text-anchor="middle" fill="#BF616A" font-family="JetBrains Mono" font-size="9">UFW · SSH key-only · Fail2ban</text>
+          <rect x="60" y="360" width="130" height="48" rx="6" fill="#2E3440" stroke="#B48EAD" stroke-width="1.5"/>
+          <text x="125" y="382" text-anchor="middle" fill="#B48EAD" font-family="JetBrains Mono" font-size="10">GitHub Actions</text>
+          <text x="125" y="397" text-anchor="middle" fill="#D8DEE9" font-family="JetBrains Mono" font-size="8">CI/CD pipeline</text>
+          <g stroke="#4C566A" stroke-width="1.5" fill="none" marker-end="url(#a)"><line x1="108" y1="80" x2="200" y2="79"/><line x1="315" y1="79" x2="420" y2="88"/><line x1="190" y1="384" x2="420" y2="358"/></g>
+          <g stroke="#434C5E" stroke-width="1" stroke-dasharray="3 3" fill="none"><line x1="485" y1="112" x2="485" y2="172"/><line x1="535" y1="194" x2="560" y2="194"/><line x1="535" y1="258" x2="560" y2="258"/></g>
+          <circle r="3" fill="#88C0D0" opacity="0.7"><animateMotion dur="4s" repeatCount="indefinite" path="M108,80 L200,79 L315,79 L420,88"/></circle>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt" id="vol">
+    <div class="container">
+      <div class="sec-head"><span class="sec-n">06</span><h2 data-i18n="vol.title">Leadership &amp; volunteering</h2></div>
+      <div class="vol-card">
+        <div class="vol-head"><div class="vol-star">★</div><div><h3 data-i18n="vol.role">Volunteer team lead — School 21 Tashkent</h3><p class="vol-per" data-i18n="vol.per">Nov 2025 — present · 20+ volunteers</p></div></div>
+        <ul>
+          <li data-i18n="vol.b1">Coordinating 20+ campus volunteers: task distribution, accountability, feedback</li>
+          <li data-i18n="vol.b2">Organizing and providing technical support for events</li>
+          <li data-i18n="vol.b3">Onboarding new students, helping with adaptation</li>
+          <li data-i18n="vol.b4">Liaising with external partners on logistics</li>
+        </ul>
+        <a href="https://github.com/c001guard/volunteer_bot" target="_blank" rel="noopener" class="vol-link" data-i18n="vol.bot">→ See the bot I built for the team</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="contact">
+    <div class="container">
+      <div class="sec-head"><span class="sec-n">07</span><h2 data-i18n="contact.title">Get in touch</h2></div>
+      <p class="sec-sub" data-i18n="contact.sub">Available for full-time from July 2026. Open to contract or staff.</p>
+      <div class="cnt-grid">
+        <a href="mailto:val_shek@mail.ru" class="cnt"><div class="cnt-ico">✉</div><div class="cnt-lab">Email</div><div class="cnt-val">val_shek@mail.ru</div></a>
+        <a href="https://t.me/c001ermsc" target="_blank" rel="noopener" class="cnt"><div class="cnt-ico">✈</div><div class="cnt-lab">Telegram</div><div class="cnt-val">@c001ermsc</div></a>
+        <a href="tel:+998909999085" class="cnt"><div class="cnt-ico">☎</div><div class="cnt-lab">Phone</div><div class="cnt-val">+998 90 999 90 85</div></a>
+        <a href="https://github.com/c001guard" target="_blank" rel="noopener" class="cnt"><div class="cnt-ico">⌨</div><div class="cnt-lab">GitHub</div><div class="cnt-val">@c001guard</div></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="ft-left"><span class="badge-dot"></span><span data-i18n="ft.up">All systems operational</span><span class="ft-dim"> · 99.9% uptime</span></div>
+      <div class="ft-right"><span>shek.dev v1.0</span><span class="ft-dim"> · </span><a href="https://github.com/c001guard/shek-dev" target="_blank" rel="noopener">source</a><span class="ft-dim"> · built with </span><span class="heart">♥</span><span class="ft-dim"> &amp; Docker</span></div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
